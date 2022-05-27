@@ -30,9 +30,9 @@
         <a href="https://github.com/Leewang31">
             <img src="https://avatars.githubusercontent.com/Leewang31?v=4" width="100px;" alt=""/>
             <br />
-            <sub><b>KiWang</b>
+            <sub><b>LeeWang</b>
             <br>
-            <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/10" />
+            <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/20" />
             </sub>
         </a>
         <br/>
@@ -40,3 +40,8 @@
       </td>
   </tr>
 </table>
+
+## 🦝 사이트
+- <a href="https://leewang31.tistory.com">티스토리</a>
+- <a href="https://www.instagram.com/_leewang_31"> 인스타그램</a>
+- <a href="https://github.com/Leewang31">깃 허브</a>
