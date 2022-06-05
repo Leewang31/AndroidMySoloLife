@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MySoloLife">
         <activity
+            android:name=".cotentsList.ContentsListActivity"
+            android:exported="true" />
+        <activity
             android:name=".auth.JoinActivity"
             android:exported="true" />
         <activity
