@@ -6,17 +6,20 @@
     android:orientation="vertical">
 
     <ImageView
-        android:src="@drawable/bottom_store"
+        android:id="@+id/imageArea"
+        android:src="@drawable/googleg_disabled_color_18"
         android:layout_width="match_parent"
         android:layout_height="100dp"/>
     <TextView
-        android:text="TextArea"
+        android:id="@+id/textArea"
+        android:text="아 모르겠다 진짜"
         android:gravity="center"
         android:textSize="15sp"
         android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <ImageView
+        android:id="@+id/bookmarkArea"
         android:src="@drawable/bookmark_white"
         android:gravity="center"
         android:layout_width="match_parent"
