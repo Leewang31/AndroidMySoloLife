@@ -3,6 +3,9 @@ package com.example.mysololife.utils
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import java.text.SimpleDateFormat
+import java.util.*
+import java.util.logging.SimpleFormatter
 
 class FBAuth {
     companion object {
@@ -11,6 +14,13 @@ class FBAuth {
         fun getUid(): String {
             auth = Firebase.auth
             return auth.currentUser?.uid.toString()
+        }
+
+        fun getTime():String{
+
+            val currentDateTime = Calendar.getInstance().time
+            val dateFormat = SimpleDateFormat("yyyy.MM.dd.HH:mm:ss", Locale.KOREA).format(currentDateTime)
+            return dateFormat
         }
     }
 }
