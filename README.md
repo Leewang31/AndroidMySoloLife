@@ -9,7 +9,7 @@
 | Step.2 | ☑ | 회원가입 및 레이아웃 꾸미기 |
 | Step.3 | ☑ | 회원가입 로직 구현(로그인/회원가입/비회원로그인) |
 | Step.4 | ☑ | 메인화면 레이아웃 꾸미기 |
-| Step.5 |  | 팁 페이지 만들기 |
+| Step.5 | ☑ | 팁 페이지 만들기 |
 | Step.6 |  | 북마크 만들기 |
 | Step.7 |  | 게시판 만들기 |
 | Step.8 |  | 게시판 수정 삭제 |
@@ -32,7 +32,7 @@
             <br />
             <sub><b>LeeWang</b>
             <br>
-            <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/45" />
+            <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/50" />
             </sub>
         </a>
         <br/>
