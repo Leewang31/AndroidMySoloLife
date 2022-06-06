@@ -16,28 +16,28 @@ import com.example.mysololife.utils.FBAuth
 import com.example.mysololife.utils.FBRef
 
 //아이템을 가져오고
-class ContentsRVAdapter(
+class BookmarkRVAdapter(
     val context: Context,
     val items: ArrayList<ContentModel>,
     val keyList: ArrayList<String>,
     val bookmarkIdList: MutableList<String>
 ) :
-    RecyclerView.Adapter<ContentsRVAdapter.Viewholder>() {
+    RecyclerView.Adapter<BookmarkRVAdapter.Viewholder>() {
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): ContentsRVAdapter.Viewholder {
+    ): BookmarkRVAdapter.Viewholder {
         val v =
             LayoutInflater.from(parent.context).inflate(R.layout.contents_rv_item, parent, false)
 
-        Log.d("ContentsRVAdapter", keyList.toString())
-        Log.d("ContentsRVAdapter", bookmarkIdList.toString())
+        Log.d("BookmarkRVAdapter", keyList.toString())
+        Log.d("BookmarkRVAdapter", bookmarkIdList.toString())
         return Viewholder(v)
     }
 
     //아이템을 넣을수 있게함
-    override fun onBindViewHolder(holder: ContentsRVAdapter.Viewholder, position: Int) {
+    override fun onBindViewHolder(holder: BookmarkRVAdapter.Viewholder, position: Int) {
 
         holder.bindItems(items[position], keyList[position])
     }
@@ -69,27 +69,6 @@ class ContentsRVAdapter(
                 bookmarkArea.setImageResource(R.drawable.bookmark_white)
             }
 
-            bookmarkArea.setOnClickListener {
-                Log.d("ContentListActivity", FBAuth.getUid())
-                Toast.makeText(context, key, Toast.LENGTH_SHORT).show()
-
-                if (bookmarkIdList.contains(key)) {
-                    //북막크가 있을때
-                    bookmarkIdList.remove(key)
-                    FBRef.bookmarkRef
-                        .child(FBAuth.getUid())
-                        .child(key)
-                        .removeValue()
-
-                } else {
-                    //북마크가 없을때
-                    FBRef.bookmarkRef
-                        .child(FBAuth.getUid())
-                        .child(key)
-                        .setValue(bookmarkModel(true))
-                }
-
-            }
 
             contentTitle.text = item.title
 
