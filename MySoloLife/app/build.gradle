@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.mysololife"
-        minSdk 29
+        minSdk 26
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -60,4 +60,6 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
 
     implementation 'com.google.firebase:firebase-database-ktx'
+
+    implementation 'com.google.firebase:firebase-storage-ktx'
 }
