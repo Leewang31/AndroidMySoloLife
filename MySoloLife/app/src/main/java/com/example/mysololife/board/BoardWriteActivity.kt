@@ -10,9 +10,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.mysololife.R
-import com.example.mysololife.cotentsList.bookmarkModel
 import com.example.mysololife.databinding.ActivityBoardWriteBinding
-import com.example.mysololife.databinding.FragmentTalkBinding
 import com.example.mysololife.utils.FBAuth
 import com.example.mysololife.utils.FBRef
 import com.google.firebase.ktx.Firebase
@@ -25,6 +23,7 @@ class BoardWriteActivity : AppCompatActivity() {
 
     private val TAG = BoardWriteActivity::class.java.simpleName
 
+    private var isImageUpload = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -50,21 +49,28 @@ class BoardWriteActivity : AppCompatActivity() {
                 .setValue(BoardModel(title,content, uid,time))
 
             Toast.makeText(this,"게시글입력완료",Toast.LENGTH_SHORT).show()
-            imageUpload()
+
+            if(isImageUpload == true){
+
+                imageUpload(key)
+
+            }
+
             finish()
 
         }
         binding.imageArea.setOnClickListener {
             val gallery = Intent(Intent.ACTION_PICK,MediaStore.Images.Media.INTERNAL_CONTENT_URI)
             startActivityForResult(gallery,100)
+            isImageUpload = true
         }
 
     }
 
-    private fun imageUpload(){
+    private fun imageUpload(key:String){
         val storage = Firebase.storage
         val storageRef = storage.reference
-        val mountainsRef = storageRef.child("mountains.jpg")
+        val mountainsRef = storageRef.child(key + ".png")
 
         val imageView = binding.imageArea
         // Get the data from an ImageView as bytes

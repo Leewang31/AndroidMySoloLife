@@ -86,7 +86,7 @@ class ContentsRVAdapter(
                     FBRef.bookmarkRef
                         .child(FBAuth.getUid())
                         .child(key)
-                        .setValue(bookmarkModel(true))
+                        .setValue(BookmarkModel(true))
                 }
 
             }

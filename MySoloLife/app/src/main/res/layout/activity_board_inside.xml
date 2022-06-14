@@ -9,6 +9,15 @@
         android:orientation="vertical"
         tools:context=".board.BoardInsideActivity">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -51,5 +60,13 @@
             android:textSize="20sp"
             android:text="내용 영역"
             android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/getImageArea"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="30dp"/>
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 </layout>

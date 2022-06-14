@@ -1,5 +1,5 @@
 package com.example.mysololife.cotentsList
 
-data class bookmarkModel(
+data class BookmarkModel(
     val bookmarkIsTrue : Boolean?=null
 )
