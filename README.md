@@ -11,7 +11,7 @@
 | Step.4 | ☑ | 메인화면 레이아웃 꾸미기 |
 | Step.5 | ☑ | 팁 페이지 만들기 |
 | Step.6 | ☑ | 북마크 만들기 |
-| Step.7 |  | 게시판 만들기 |
+| Step.7 | ☑ | 게시판 만들기 |
 | Step.8 |  | 게시판 수정 삭제 |
 | Step.9 |  | 게시판 댓글 만들기 |
 | Step.10 |  | 레이아웃 정리 |
@@ -32,7 +32,7 @@
             <br />
             <sub><b>LeeWang</b>
             <br>
-            <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/63" />
+            <img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/70" />
             </sub>
         </a>
         <br/>
